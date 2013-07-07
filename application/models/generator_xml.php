@@ -48,12 +48,17 @@ class Generator_xml extends CI_Model{
     }
 
 
+    /**
+     *
+     * Simple XML parser method
+     * @param $xmlstring
+     * @return mixed
+     */
     function parseXML($xmlstring)
     {
         $xml = @simplexml_load_string($xmlstring); // don't display parse xml errors
         $json = json_encode($xml);
         return json_decode($json,TRUE);
-
     }
 
 }

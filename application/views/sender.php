@@ -8,7 +8,7 @@
 <br />
 
 <br />
-<div id="log" style="border: 1px solid; height: 300px;"></div>
+<div id="log"></div>
 <div id="loading_div"></div>
 
 
